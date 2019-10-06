@@ -21,7 +21,7 @@ List of references:
 (by Matas Gumbinas).  
 https://github.com/gMatas/edunet
 2. "Fingers" dataset (by Pavel Koryakin).  
-https://www.kaggle.com/gmatas/account
+https://www.kaggle.com/koryakinp/fingers
 
 ## Starting up
 
@@ -44,11 +44,11 @@ pip install -r requirements.txt
 Finaly, before running this notebook, please run following commands: 
 ```shell
 cd datasets
-python fingers32.py
+python fingers.py
 cd ..
 ```
 
-This script will unzip "fingers.zip" file and read its contents to original "**fingers**" dataset. Afterwards  
+```fingers.py``` script will unzip "fingers.zip" file and read its contents to original "**fingers**" dataset. Afterwards  
 it will generate a downsampled version of it to a directory "**fingers32**". The following work will be done on  
 the downsampled dataset.
 
