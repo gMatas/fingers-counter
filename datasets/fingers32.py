@@ -1,5 +1,6 @@
 from typing import Tuple
 import os
+from zipfile import ZipFile
 
 import cv2
 
@@ -11,19 +12,20 @@ SIZE: Tuple[int, int] = (32, 32)
 
 
 if __name__ == '__main__':
+    
+    print('Extracting dataset file...', end='')
 
     if not os.path.exists(ORIGIN_DIRPATH):
         os.mkdir(ORIGIN_DIRPATH)
-        
-    if not os.path.exists(TARGET_DIRPATH):
-        os.mkdir(TARGET_DIRPATH)
     
-    print('Extracting dataset file...', end='')
     with ZipFile(DATASET_ZIP, 'r') as zipObj:
-       # Extract all the contents of zip file in current directory
-       zipObj.extractall(ORIGIN_DIRPATH)
+        # Extract all the contents of zip file in current directory
+        zipObj.extractall(ORIGIN_DIRPATH)
+    
     print(' Done.')
     
+    if not os.path.exists(TARGET_DIRPATH):
+        os.mkdir(TARGET_DIRPATH)
     
     valid_extensions = {'jpg', 'png', 'jpeg'}
 
