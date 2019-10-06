@@ -22,7 +22,7 @@ if __name__ == '__main__':
         # Extract all the contents of zip file in current directory
         zipObj.extractall(ORIGIN_DIRPATH)
     
-    print(' Done.')
+    print(' Done')
     
     if not os.path.exists(TARGET_DIRPATH):
         os.mkdir(TARGET_DIRPATH)
@@ -58,6 +58,6 @@ if __name__ == '__main__':
             processed_image = cv2.resize(image, SIZE)
             cv2.imwrite(target_filepath, processed_image)
             
-        print(' Done.')
+        print(' Done')
             
     print('Program is complete.')

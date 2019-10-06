@@ -41,8 +41,12 @@ dependencies:
 pip install -r requirements.txt
 ```
 
-Finaly, before running this notebook, please run python script located at:  
-"**datasets/fingers_32x32/fingers32.py**"
+Finaly, before running this notebook, please run following commands: 
+```shell
+cd datasets
+python fingers32.py
+cd ..
+```
 
 This script will unzip "fingers.zip" file and read its contents to original "**fingers**" dataset. Afterwards  
 it will generate a downsampled version of it to a directory "**fingers32**". The following work will be done on  
