@@ -49,7 +49,7 @@ cd ..
 ```
 
 ```fingers.py``` script will unzip "fingers.zip" file and read its contents to original "**fingers**" dataset. Afterwards  
-it will generate a downsampled version of it to a directory "**fingers32**". The following work will be done on  
+it will generate a downsampled version of it to a directory "**fingers_32x32**". The following work will be done on  
 the downsampled dataset.
 
 *That's it! Have fun using this project!*
