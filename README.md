@@ -12,7 +12,7 @@ dataset is to help create an image classifier that would count fingers on a hand
 
 Results:  
 During this work, using EduNet API, a Convolution Neural Network was created to be trained on the  
-given dataset. Afterwards, the trained model was tested using unused part of the dataset meant for 
+given dataset. Afterwards, the trained model was tested using unused part of the dataset meant for  
 testing the trained models. The trained model reached 100% accuracy with training, validation and  
 testing datasets after 4 epochs.
 
