@@ -33,7 +33,7 @@ if __name__ == '__main__':
     for dirpath, dirnames, filenames in os.walk(ORIGIN_DIRPATH):
         destination_dirpath = os.path.join(TARGET_DIRPATH, dirpath[len(ORIGIN_DIRPATH):])
         
-        print('  - Processing "{}"...'.format(destination_dirpath), end='')
+        print('  - Processing "{}"...'.format(destination_dirpath), end='', flush=True)
 
         if not os.path.exists(destination_dirpath):
             os.mkdir(destination_dirpath)
