@@ -1,5 +1,6 @@
 from typing import Tuple
 import os
+import sys
 from zipfile import ZipFile
 
 import cv2
@@ -13,7 +14,7 @@ SIZE: Tuple[int, int] = (32, 32)
 
 if __name__ == '__main__':
     
-    print('Extracting dataset file...', end='')
+    print('Extracting dataset file...', end='', flush=True)
 
     if not os.path.exists(ORIGIN_DIRPATH):
         os.mkdir(ORIGIN_DIRPATH)
