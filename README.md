@@ -12,8 +12,8 @@ dataset is to help create an image classifier that would count fingers on a hand
 
 Results:  
 During this work, using EduNet API, a Convolution Neural Network was created to be trained on the  
-given dataset. Afterwards, the trained model was tested using unused part of the dataset meant for   
-testing the trained models. The trained model reached 100% accuracy with training, validation and
+given dataset. Afterwards, the trained model was tested using unused part of the dataset meant for 
+testing the trained models. The trained model reached 100% accuracy with training, validation and  
 testing datasets after 4 epochs.
 
 List of references:  
@@ -35,8 +35,8 @@ git checkout v1.3.0-alpha.0
 cd ..
 ```
 
-Next, from the ```fingers-counter```project main directory run the following pip command to install the required python  
-dependencies:
+Next, from the ```fingers-counter```project main directory run the following pip command to install the  
+required python dependencies:
 ```shell
 pip install -r requirements.txt
 ```
@@ -48,8 +48,8 @@ python fingers.py
 cd ..
 ```
 
-```fingers.py``` script will unzip "fingers.zip" file and read its contents to original "**fingers**" dataset. Afterwards  
-it will generate a downsampled version of it to a directory "**fingers_32x32**". The following work will be done on  
-the downsampled dataset.
+```fingers.py``` script will unzip "fingers.zip" file and read its contents to original "**fingers**" dataset.  
+Afterwards it will generate a downsampled version of it to a directory "**fingers_32x32**". The following work  
+will be done on the downsampled dataset.
 
 *That's it! Have fun using this project!*
