@@ -1,6 +1,5 @@
 from typing import Tuple
 import os
-import sys
 from zipfile import ZipFile
 
 import cv2
