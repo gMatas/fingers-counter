@@ -6,12 +6,12 @@ By Matas Gumbinas, 2019
 
 ## Introduction & acknowledgements
 
-The sole goal of this work is to demonstrate **EduNet** NN (neural networks) modeling framework [1].  
+The sole goal of this work is to demonstrate **EduNet** neural networks modeling framework [1].  
 For this task a Kaggle dataset "Fingers" by Pavel Koryakin [2] was used. The purpose of this  
 dataset is to help create an image classifier that would count fingers on a hand from 0 to 5.
 
 Results:  
-During this work, using EduNet API, a Convolution Neural Network was created to be trained on the  
+During this work, using EduNet API, a Convolutional Neural Network was created to be trained on the  
 given dataset. Afterwards, the trained model was tested using unused part of the dataset meant for  
 testing the trained models. The trained model reached 100% accuracy with training, validation and  
 testing datasets after 4 epochs.
@@ -35,7 +35,7 @@ git checkout v1.3.0-alpha.0
 cd ..
 ```
 
-Next, from the ```fingers-counter```project main directory run the following pip command to install the  
+Next, from the ```fingers-counter/```project main directory run the following pip command to install the  
 required python dependencies:
 ```shell
 pip install -r requirements.txt
